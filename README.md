@@ -1,16 +1,19 @@
 # Artha
 
-> AI workplace simulation for job readiness.
->
-> Built for the Wadhwani AI Hackathon.
-
 <p align="center">
   <img src="public/favicon.svg" alt="Artha logo" width="96" height="96" />
 </p>
 
+<h1 align="center">Artha</h1>
+
+<p align="center"><strong>AI workplace simulation for job readiness.</strong></p>
+
 <p align="center">
-  <strong>Artha turns workplace pressure into a capability profile.</strong><br />
   Learners step into realistic work situations, make decisions in motion, and leave with a diagnostic that is more useful than a generic score.
+</p>
+
+<p align="center">
+  <em>Presentation build for the Wadhwani AI Hackathon</em>
 </p>
 
 <p align="center">

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+	<defs>
+		<linearGradient id="artha-bg" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+			<stop offset="0%" stop-color="#111827" />
+			<stop offset="100%" stop-color="#030712" />
+		</linearGradient>
+		<linearGradient id="artha-mark" x1="9" y1="10" x2="39" y2="38" gradientUnits="userSpaceOnUse">
+			<stop offset="0%" stop-color="#A5B4FC" />
+			<stop offset="100%" stop-color="#6366F1" />
+		</linearGradient>
+	</defs>
+	<rect x="2" y="2" width="44" height="44" rx="13" fill="url(#artha-bg)" />
+	<path d="M24 9.5C17.6 9.5 12.5 14.6 12.5 21S17.6 32.5 24 32.5c3.3 0 6.1-1.2 8.3-3.4" stroke="url(#artha-mark)" stroke-width="2.8" stroke-linecap="round" />
+	<path d="M35.5 24c0-6.4-5.1-11.5-11.5-11.5-3.3 0-6.1 1.2-8.3 3.4" stroke="#F8FAFC" stroke-opacity="0.26" stroke-width="2.8" stroke-linecap="round" />
+	<circle cx="24" cy="24" r="2.25" fill="url(#artha-mark)" />
+</svg>
