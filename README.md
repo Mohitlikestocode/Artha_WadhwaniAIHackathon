@@ -4,7 +4,21 @@
 >
 > Built for the Wadhwani AI Hackathon.
 
-Artha is a front-end experience that puts a learner inside realistic work situations, lets them make decisions under pressure, and then turns that run into a capability profile that is more useful than a generic score.
+<p align="center">
+  <img src="public/favicon.svg" alt="Artha logo" width="96" height="96" />
+</p>
+
+<p align="center">
+  <strong>Artha turns workplace pressure into a capability profile.</strong><br />
+  Learners step into realistic work situations, make decisions in motion, and leave with a diagnostic that is more useful than a generic score.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Zustand-State_Management-111827?style=flat-square" alt="Zustand" />
+  <img src="https://img.shields.io/badge/Static%20Deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
 
 ## Snapshot
 
@@ -15,6 +29,16 @@ Artha is a front-end experience that puts a learner inside realistic work situat
 | Output | Multi-dimensional capability profile after each run |
 | Persistence | Lightweight browser storage via `localStorage` |
 | Stack | React 19, Vite, Zustand, React Router, Framer Motion, Lucide React, Recharts, Tailwind CSS |
+
+## Sticker Sheet
+
+| Sticker | Meaning |
+| --- | --- |
+| ✦ | Capability-first product story |
+| ⌁ | Reactive simulations instead of static quizzes |
+| ◌ | Lightweight persistence with zero backend setup |
+| ✦ | Mobile-first layout for lower-cost devices |
+| ⟡ | Presentation-ready design language |
 
 ## Why It Exists
 
