@@ -44,8 +44,8 @@ const STEPS = [
 const FAQ = [
   { q: "Is this just a quiz?", a: "No. There are no right answers. Characters react to your tone. Time pressure is real. The diagnostic is generated from your actual behaviour, not your score on a question bank." },
   { q: "Does this work on a ₹9,000 Android phone?", a: "Yes. Mobile-first design. Works on 4G. Single chat view collapses on small screens. We test on devices first-gen learners actually use." },
-  { q: "Will employers see my profile?", a: "Only if you choose to share it. You own your KarmaLoop profile. Consent-based portability is the model — the badge is yours to send to LinkedIn or WhatsApp, no auto-publishing." },
-  { q: "How is this different from Forage?", a: "Forage is content — pre-recorded scenarios with model answers. KarmaLoop is a reactive AI environment with hidden agendas, time pressure, and a diagnostic that names specific behaviours, not just scores." },
+  { q: "Will employers see my profile?", a: "Only if you choose to share it. You own your Artha profile. Consent-based portability is the model — the badge is yours to send to LinkedIn or WhatsApp, no auto-publishing." },
+  { q: "How is this different from Forage?", a: "Forage is content — pre-recorded scenarios with model answers. Artha is a reactive AI environment with hidden agendas, time pressure, and a diagnostic that names specific behaviours, not just scores." },
   { q: "Is the diagnostic honest, or is it just being nice?", a: "It is honest. If you fold under pressure, the report will say so — and tell you the phrase to use next time." },
   { q: "Can I retry?", a: "Yes, as often as you want. The same simulation runs differently each time — the characters react to your specific moves. Most learners do three runs to see their growth arc." },
 ];
@@ -113,7 +113,7 @@ export default function HowItWorks({ accent = '#6366F1', onNavigate, onEnter, on
           <section style={{ marginTop: 96 }}>
             <Eyebrow accent={accent}>Six modes · six kinds of intelligence</Eyebrow>
             <h2 style={hwH2}>Real workplaces don't test you one way.</h2>
-            <p style={hwP}><JargonText>Most platforms simulate one thing — typing replies in a chat. Real work tests you through a crisis on a Friday afternoon, an inbox you wake up to, a meeting you can't control, a negotiation you can't read, a presentation that loses the room. KarmaLoop simulates all six.</JargonText></p>
+            <p style={hwP}><JargonText>Most platforms simulate one thing — typing replies in a chat. Real work tests you through a crisis on a Friday afternoon, an inbox you wake up to, a meeting you can't control, a negotiation you can't read, a presentation that loses the room. Artha simulates all six.</JargonText></p>
             <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
               {MODES.map(m => (
                 <div key={m.id} style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderLeft: `3px solid ${m.accent}`, borderRadius: 'var(--radius)', padding: '18px 20px' }}>

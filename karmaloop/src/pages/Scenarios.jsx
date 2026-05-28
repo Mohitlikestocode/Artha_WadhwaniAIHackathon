@@ -120,7 +120,7 @@ export default function Scenarios({ accent = '#6366F1', onNavigate, onEnter, onD
             Every track. Every kind of work.<br />
             <span style={{ background: `linear-gradient(120deg, ${accent} 0%, #C7D2FE 60%, #fff 100%)`, WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Every test the workplace runs.</span>
           </h1>
-          <p style={scLede}><JargonText>India's career landscape isn't one path. KarmaLoop ships eight, each calibrated to the real workday of that role. SWE is live today. The other seven are designed, scoped, and queued — full UI, full diagnostic, full scenario library. Browse below.</JargonText></p>
+          <p style={scLede}><JargonText>India's career landscape isn't one path. Artha ships eight, each calibrated to the real workday of that role. SWE is live today. The other seven are designed, scoped, and queued — full UI, full diagnostic, full scenario library. Browse below.</JargonText></p>
 
           {/* Track switcher */}
           <div style={{ marginTop: 48, display: 'flex', gap: 8, flexWrap: 'wrap' }}>

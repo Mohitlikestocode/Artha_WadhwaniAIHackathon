@@ -19,7 +19,7 @@ export function SiteHeader({ active, accent = '#6366F1', onNavigate, onEnter, on
     }}>
       <button onClick={() => onNavigate?.('landing')} style={{ display: 'flex', alignItems: 'center', gap: 10, background: 'transparent', border: 0, padding: 0, cursor: 'pointer', color: 'var(--text-1)' }}>
         <Icon name="logo" size={24} color="#fff" />
-        <span style={{ fontWeight: 700, fontSize: 16, letterSpacing: '-0.01em' }}>KarmaLoop</span>
+        <span style={{ fontWeight: 700, fontSize: 16, letterSpacing: '-0.01em' }}>Artha</span>
         <span style={{ marginLeft: 6, fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-3)', border: '1px solid var(--border)', padding: '2px 6px', borderRadius: 4 }}>v0.3 · prototype</span>
       </button>
 

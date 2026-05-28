@@ -59,7 +59,7 @@ function ModeCard({ mode, isNext, done, onPick }) {
 
 export default function ModeSelector({ user = {}, accent = '#6366F1', onPickMode, onBack }) {
   const [completed] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('karmaloop:modesCompleted') || '{}'); }
+    try { return JSON.parse(localStorage.getItem('artha:modesCompleted') || localStorage.getItem('karmaloop:modesCompleted') || '{}'); }
     catch { return {}; }
   });
 
@@ -81,7 +81,7 @@ export default function ModeSelector({ user = {}, accent = '#6366F1', onPickMode
         </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <Icon name="logo" size={20} color="#fff" />
-          <span style={{ fontWeight: 600, fontSize: 14 }}>KarmaLoop</span>
+          <span style={{ fontWeight: 600, fontSize: 14 }}>Artha</span>
           <span style={{ marginLeft: 4, fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-3)', border: '1px solid var(--border)', padding: '3px 7px', borderRadius: 4, letterSpacing: '0.1em' }}>SIMULATION MODES</span>
         </div>
         <div style={{ width: 80 }} />
@@ -95,7 +95,7 @@ export default function ModeSelector({ user = {}, accent = '#6366F1', onPickMode
           </div>
           <h1 style={{ margin: 0, fontSize: 'clamp(32px, 5vw, 48px)', letterSpacing: '-0.03em', fontWeight: 700, lineHeight: 1.05 }}>How do you want to practice today?</h1>
           <p style={{ marginTop: 14, fontSize: 16, color: 'var(--text-2)', maxWidth: 680, lineHeight: 1.55 }}>
-            Real workplaces don't test you one way. KarmaLoop has six. Each tests a different kind of intelligence. Try them in any order — the recommended next one is highlighted.
+            Real workplaces don't test you one way. Artha has six. Each tests a different kind of intelligence. Try them in any order — the recommended next one is highlighted.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export default function ModeSelector({ user = {}, accent = '#6366F1', onPickMode
         <div style={{ marginTop: 36, padding: '16px 18px', background: 'var(--surface)', border: '1px dashed var(--border-2)', borderRadius: 'var(--radius-lg)', fontSize: 13, color: 'var(--text-2)', display: 'flex', alignItems: 'flex-start', gap: 12 }}>
           <Icon name="sparkle" size={16} color={accent} style={{ marginTop: 2, flexShrink: 0 }} />
           <div>
-            Each mode produces its own diagnostic. After 3+ modes, KarmaLoop generates a <b style={{ color: 'var(--text-1)' }}>Cross-Mode Synthesis</b> — patterns that hold across context, where you grow vs. plateau, and the single highest-leverage habit to work on next.
+            Each mode produces its own diagnostic. After 3+ modes, Artha generates a <b style={{ color: 'var(--text-1)' }}>Cross-Mode Synthesis</b> — patterns that hold across context, where you grow vs. plateau, and the single highest-leverage habit to work on next.
           </div>
         </div>
       </main>

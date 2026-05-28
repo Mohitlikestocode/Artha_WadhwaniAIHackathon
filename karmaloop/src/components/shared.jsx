@@ -36,7 +36,7 @@ export function CTACard({ accent = '#6366F1', onEnter, headline = 'Your first jo
 export function SiteFooter() {
   return (
     <footer style={{ borderTop: '1px solid var(--border)', padding: '24px 28px', fontSize: 12, color: 'var(--text-3)', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
-      <span>© 2026 KarmaLoop Labs · Built for Bengaluru, Bhopal, Bhubaneswar. Not just Bangalore.</span>
+      <span>© 2026 Artha Labs · Built for Bengaluru, Bhopal, Bhubaneswar. Not just Bangalore.</span>
       <span style={{ fontFamily: 'var(--font-mono)' }}>Available in हिन्दी · தமிழ் · ಕನ್ನಡ · తెలుగు · मराठी · English</span>
     </footer>
   );

@@ -84,7 +84,7 @@ export default function Landing({ onEnter, accent = '#6366F1', onNavigate, onDas
       </main>
 
       <footer style={{ position: 'relative', zIndex: 2, padding: '20px 32px', borderTop: '1px solid var(--border)', fontSize: 12, color: 'var(--text-3)', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
-        <span>© 2026 KarmaLoop Labs · Built for Bengaluru, Bhopal, Bhubaneswar. Not just Bangalore.</span>
+        <span>© 2026 Artha Labs · Built for Bengaluru, Bhopal, Bhubaneswar. Not just Bangalore.</span>
         <span style={{ fontFamily: 'var(--font-mono)' }}>Available in हिन्दी · தமிழ் · ಕನ್ನಡ · తెలుగు · मराठी · English</span>
       </footer>
     </div>

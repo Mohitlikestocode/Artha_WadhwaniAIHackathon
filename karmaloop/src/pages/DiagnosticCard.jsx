@@ -69,7 +69,7 @@ export default function DiagnosticCard({ user = {}, result = {}, onRestart, onDa
       <header style={{ position: 'relative', zIndex: 2, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 28px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <Icon name="logo" size={22} color="#fff" />
-          <span style={{ fontWeight: 600, fontSize: 14 }}>KarmaLoop</span>
+          <span style={{ fontWeight: 600, fontSize: 14 }}>Artha</span>
           <span style={{ marginLeft: 8, fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-3)', border: '1px solid var(--border)', padding: '3px 7px', borderRadius: 4, letterSpacing: '0.1em' }}>DAY 3 RECAP</span>
         </div>
         <button onClick={onRestart} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'transparent', color: 'var(--text-2)', border: '1px solid var(--border)', padding: '8px 14px', borderRadius: 'var(--radius-sm)', fontSize: 13, cursor: 'pointer' }}>

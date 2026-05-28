@@ -55,7 +55,7 @@ export default function Mission({ accent = '#6366F1', onEnter, onBack, onNavigat
               <span style={{ background: `linear-gradient(120deg, ${accent} 0%, #C7D2FE 60%, #fff 100%)`, WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>not credentials.</span>
             </h1>
             <p style={{ marginTop: 28, fontSize: 'clamp(17px, 2vw, 22px)', color: 'var(--text-2)', lineHeight: 1.55, maxWidth: 720 }}>
-              India produces 1.5 million engineering graduates a year. <span style={{ color: 'var(--text-1)', fontWeight: 600 }}>57.4% are job-ready.</span> The rest have credentials but not capabilities. KarmaLoop closes that gap — not with content, not with videos, not with model answers, but with a living AI workplace that watches you work and tells you exactly what you need to fix.
+              India produces 1.5 million engineering graduates a year. <span style={{ color: 'var(--text-1)', fontWeight: 600 }}>57.4% are job-ready.</span> The rest have credentials but not capabilities. Artha closes that gap — not with content, not with videos, not with model answers, but with a living AI workplace that watches you work and tells you exactly what you need to fix.
             </p>
           </section>
 
@@ -83,17 +83,17 @@ export default function Mission({ accent = '#6366F1', onEnter, onBack, onNavigat
             <SectionEyebrow>Who it's for</SectionEyebrow>
             <h2 style={miH2}>Aanya, 22, Patna.<br />Computer Science degree. Never been in an office.</h2>
             <p style={miP}>Aanya is the median user. First-generation graduate. A ₹9,000 Android phone. A 4G connection that drops in the afternoon. She's technically trained, but she's never had to push back on a PM, never had to draft a client status update, never had to escalate. She doesn't need more tutorials. She needs reps in a real workplace — the kind that doesn't exist for her yet.</p>
-            <p style={miP}>KarmaLoop is built mobile-first for ₹9,000 phones. Works on 4G. Diagnostic delivered in her language. No laptop required.</p>
+            <p style={miP}>Artha is built mobile-first for ₹9,000 phones. Works on 4G. Diagnostic delivered in her language. No laptop required.</p>
           </section>
 
           {/* vs Forage */}
           <section style={{ marginTop: 96 }}>
             <SectionEyebrow>Why this isn't another Forage</SectionEyebrow>
-            <h2 style={miH2}>Forage is content. KarmaLoop is a mirror.</h2>
+            <h2 style={miH2}>Forage is content. Artha is a mirror.</h2>
             <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 1, background: 'var(--border)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
               <DiffCol label="Static content tools" examples={['Forage', 'edtech LMS']} bg="var(--surface)"
                 points={['Pre-recorded scenarios with model answers', 'You watch, you read, you submit', 'Feedback is comparison to a fixed key', 'No memory, no reaction, no consequence']} />
-              <DiffCol label="KarmaLoop" highlight examples={['this']} accent={accent} bg="var(--surface)"
+              <DiffCol label="Artha" highlight examples={['this']} accent={accent} bg="var(--surface)"
                 points={["Reactive AI environment — every reply changes what happens next", "Characters with hidden agendas (Priya hides a 2pm demo; Kiran hides yesterday's push)", 'Diagnostic is an 8-dimension gap taxonomy, not a score', 'Annotated transcript: every choice tagged to a dimension']} />
             </div>
           </section>
@@ -132,7 +132,7 @@ export default function Mission({ accent = '#6366F1', onEnter, onBack, onNavigat
           <section style={{ marginTop: 96 }}>
             <SectionEyebrow>Deployment</SectionEyebrow>
             <h2 style={miH2}>SWAYAM. 75 million students. Tomorrow.</h2>
-            <p style={miP}>SWAYAM is India's national learning platform. Wadhwani AI's spoken English assessment is already deployed there with Google's support. KarmaLoop is a new module on existing infrastructure. We don't need to build distribution — it exists.</p>
+            <p style={miP}>SWAYAM is India's national learning platform. Wadhwani AI's spoken English assessment is already deployed there with Google's support. Artha is a new module on existing infrastructure. We don't need to build distribution — it exists.</p>
             <p style={miP}>Samagra Shiksha can deploy this to every state-supported college. NSDC can embed it in Skill India pathways. Employer partners can use diagnostic scores as a screening signal with consent-based portability.</p>
           </section>
 

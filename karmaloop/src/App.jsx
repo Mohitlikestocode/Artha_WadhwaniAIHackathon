@@ -74,13 +74,13 @@ export default function App() {
     setScreen('diagnostic');
     // Persist to localStorage
     try {
-      const stored = JSON.parse(localStorage.getItem('karmaloop:runs') || '[]');
+      const stored = JSON.parse(localStorage.getItem('artha:runs') || localStorage.getItem('karmaloop:runs') || '[]');
       stored.unshift({ id: 'run-' + Date.now(), finishedAt: r.finishedAt, scenarioId: r.scenarioId, scenarioTitle: r.scenarioTitle, mode: r.mode || currentMode || 'office', signals: r.signals, user: { name: user.name, lang: user.lang, track: user.track } });
-      localStorage.setItem('karmaloop:runs', JSON.stringify(stored.slice(0, 50)));
+      localStorage.setItem('artha:runs', JSON.stringify(stored.slice(0, 50)));
       const modeId = r.mode || currentMode || 'office';
-      const completed = JSON.parse(localStorage.getItem('karmaloop:modesCompleted') || '{}');
+      const completed = JSON.parse(localStorage.getItem('artha:modesCompleted') || localStorage.getItem('karmaloop:modesCompleted') || '{}');
       completed[modeId] = (completed[modeId] || 0) + 1;
-      localStorage.setItem('karmaloop:modesCompleted', JSON.stringify(completed));
+      localStorage.setItem('artha:modesCompleted', JSON.stringify(completed));
     } catch {}
   };
   const goRestart = () => { setResult(null); setUser({ name: '', lang: 'en', bg: '', track: 'swe', profile: null }); setCurrentMode(null); setScreen('landing'); };

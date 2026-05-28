@@ -14,7 +14,7 @@ const STATS = [
 ];
 
 const WORKFLOW = [
-  { title: 'Pre-screen replacement', body: 'Replace the 30-minute "tell me about yourself" call with a 25-minute KarmaLoop session. Candidates self-serve. You see their diagnostic before your first interview.' },
+  { title: 'Pre-screen replacement', body: 'Replace the 30-minute "tell me about yourself" call with a 25-minute Artha session. Candidates self-serve. You see their diagnostic before your first interview.' },
   { title: 'Interview prep companion', body: 'For shortlisted candidates, the diagnostic surfaces the specific behavioural questions to ask. "Their lowest dimension was constructive pushback — ask about a disagreement they had with their PM."' },
   { title: 'Onboarding signal', body: 'Once hired, the diagnostic becomes a 90-day development plan. Managers know exactly which capabilities to coach. Reduces six-month attrition in pilot.' },
 ];
@@ -123,7 +123,7 @@ function ContactCard({ accent }) {
   return (
     <section style={{ marginTop: 64 }}>
       <Eyebrow accent={accent}>Talk to us</Eyebrow>
-      <h2 style={{ margin: '12px 0 0', fontSize: 'clamp(28px, 4vw, 44px)', letterSpacing: '-0.025em', fontWeight: 700, lineHeight: 1.1 }}>Pilot KarmaLoop with your team.</h2>
+      <h2 style={{ margin: '12px 0 0', fontSize: 'clamp(28px, 4vw, 44px)', letterSpacing: '-0.025em', fontWeight: 700, lineHeight: 1.1 }}>Pilot Artha with your team.</h2>
       <p style={{ margin: '14px 0 0', fontSize: 16, color: 'var(--text-2)', lineHeight: 1.65, maxWidth: 720 }}><JargonText>Hiring managers, HR leaders, NSDC partners — drop a note and we'll get back within 48 hours. Most pilots start with 50 candidates, free of charge, no commitment.</JargonText></p>
       <div style={{ marginTop: 28, background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-xl)', padding: '28px 30px' }}>
         {sent ? (
@@ -169,7 +169,7 @@ export default function Employers({ accent = '#6366F1', onNavigate, onEnter, onD
             Resumes are broken.<br />
             <span style={{ background: `linear-gradient(120deg, ${accent} 0%, #C7D2FE 60%, #fff 100%)`, WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>This is the signal.</span>
           </h1>
-          <p style={empLede}><JargonText>You receive 400 resumes per opening. You can interview 8. The other 392 — including most of your future top performers — never make it past the keyword filter. KarmaLoop gives you a behavioural signal from one morning that no resume can fake: how a candidate communicates, escalates, prioritizes, and pushes back when work actually gets messy.</JargonText></p>
+          <p style={empLede}><JargonText>You receive 400 resumes per opening. You can interview 8. The other 392 — including most of your future top performers — never make it past the keyword filter. Artha gives you a behavioural signal from one morning that no resume can fake: how a candidate communicates, escalates, prioritizes, and pushes back when work actually gets messy.</JargonText></p>
 
           {/* Stats */}
           <section style={{ marginTop: 64 }}>
@@ -236,7 +236,7 @@ export default function Employers({ accent = '#6366F1', onNavigate, onEnter, onD
           <section style={{ marginTop: 96 }}>
             <Eyebrow accent={accent}>Pricing</Eyebrow>
             <h2 style={empH2}>Free for learners. Always.</h2>
-            <p style={empP}><JargonText>Learners never pay. KarmaLoop is funded by employer subscriptions and government partnerships. Candidates own their profile and consent to share — we never auto-publish. Employers see anonymized aggregate data for free; candidate-specific reports are licensed per-hire.</JargonText></p>
+            <p style={empP}><JargonText>Learners never pay. Artha is funded by employer subscriptions and government partnerships. Candidates own their profile and consent to share — we never auto-publish. Employers see anonymized aggregate data for free; candidate-specific reports are licensed per-hire.</JargonText></p>
             <div style={{ marginTop: 32, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 14 }}>
               {TIERS.map((t, i) => <PricingTier key={i} tier={t} accent={accent} />)}
             </div>

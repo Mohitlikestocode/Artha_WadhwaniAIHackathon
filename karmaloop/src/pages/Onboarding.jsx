@@ -143,7 +143,7 @@ export default function Onboarding({ accent = '#6366F1', onDone, onBack }) {
         </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <Icon name="logo" size={20} color="#fff" />
-          <span style={{ fontWeight: 600, fontSize: 14 }}>KarmaLoop</span>
+          <span style={{ fontWeight: 600, fontSize: 14 }}>Artha</span>
         </div>
         <OnbStepper step={step} total={5} accent={accent} />
       </header>

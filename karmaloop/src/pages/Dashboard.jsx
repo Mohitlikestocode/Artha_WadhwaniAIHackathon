@@ -43,7 +43,7 @@ function RunCard({ run, accent, onOpen }) {
 
 export default function Dashboard({ user = {}, accent = '#6366F1', onNewSim, onOpenRun, onBackHome }) {
   const [runs, setRuns] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('karmaloop:runs') || '[]'); }
+    try { return JSON.parse(localStorage.getItem('artha:runs') || localStorage.getItem('karmaloop:runs') || '[]'); }
     catch { return []; }
   });
 
@@ -70,7 +70,7 @@ export default function Dashboard({ user = {}, accent = '#6366F1', onNewSim, onO
   });
   const top = [...dims].sort((a, b) => b.avg - a.avg)[0];
   const bottom = [...dims].sort((a, b) => a.avg - b.avg)[0];
-  const modesCompleted = (() => { try { return JSON.parse(localStorage.getItem('karmaloop:modesCompleted') || '{}'); } catch { return {}; } })();
+  const modesCompleted = (() => { try { return JSON.parse(localStorage.getItem('artha:modesCompleted') || localStorage.getItem('karmaloop:modesCompleted') || '{}'); } catch { return {}; } })();
 
   return (
     <div style={{ minHeight: '100dvh', background: 'var(--bg)', color: 'var(--text-1)' }}>
@@ -79,7 +79,7 @@ export default function Dashboard({ user = {}, accent = '#6366F1', onNewSim, onO
       <header style={{ position: 'relative', zIndex: 2, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 28px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <Icon name="logo" size={22} color="#fff" />
-          <span style={{ fontWeight: 600, fontSize: 14 }}>KarmaLoop</span>
+          <span style={{ fontWeight: 600, fontSize: 14 }}>Artha</span>
           <span style={{ marginLeft: 8, fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-3)', border: '1px solid var(--border)', padding: '3px 7px', borderRadius: 4, letterSpacing: '0.1em' }}>YOUR DASHBOARD</span>
         </div>
         <button onClick={onBackHome} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'transparent', color: 'var(--text-2)', border: '1px solid var(--border)', padding: '8px 14px', borderRadius: 'var(--radius-sm)', fontSize: 13, cursor: 'pointer' }}>
