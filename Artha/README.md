@@ -1,37 +1,38 @@
 # Artha
 
 > AI workplace simulation for job readiness.
+>
 > Built for the Wadhwani AI Hackathon.
 
-Artha turns a learner into the main character of a workday: they enter realistic situations, make choices under pressure, and leave with a capability diagnostic that is more useful than a generic score.
+Artha is a front-end experience that puts a learner inside realistic work situations, lets them make decisions under pressure, and then turns that run into a capability profile that is more useful than a generic score.
 
-The demo in this repository is a polished front-end experience. It includes onboarding, multiple simulation modes, a diagnostic profile, a run dashboard, and a landing page designed to feel like a real product, not a classroom exercise.
+## Snapshot
 
-## At A Glance
-
-| What | Details |
+| Area | What it does |
 | --- | --- |
 | Product | AI workplace simulation for employability and training |
 | Experience | Landing page, onboarding, simulation modes, diagnostic, dashboard |
 | Output | Multi-dimensional capability profile after each run |
-| Storage | Lightweight browser persistence via `localStorage` |
+| Persistence | Lightweight browser storage via `localStorage` |
 | Stack | React 19, Vite, Zustand, React Router, Framer Motion, Lucide React, Recharts, Tailwind CSS |
 
-## Why Artha Exists
+## Why It Exists
 
-Most learning products teach content. Artha teaches workplace texture.
+Most learning products measure completion. Artha measures workplace texture.
 
-It is designed to reveal how someone communicates, escalates, prioritizes, and recovers under pressure. That makes it more useful for employability conversations, mentoring, and screening than a static quiz or course-completion badge.
+It is designed to surface how someone communicates, escalates, prioritizes, and recovers under pressure. That makes it useful for employability conversations, mentoring, and screening in a way that a static quiz cannot match.
 
-## What It Does
+## What You Get
 
-- Simulates workplace situations across multiple modes, including office chat, branch decisions, inbox triage, war-room response, negotiation, and pitch-stage scenarios.
-- Produces a multi-dimensional diagnostic after each run.
-- Persists run history and mode progress locally in the browser.
-- Uses a mobile-first design language so it feels usable on low-cost phones as well as desktop.
-- Frames the product for learners, employers, and ecosystem partners.
+| Experience | Outcome |
+| --- | --- |
+| Onboarding | A fast start that gets the learner into the flow quickly |
+| Simulation modes | Scenarios such as office chat, branch decisions, inbox triage, war-room response, negotiation, and pitch-stage moments |
+| Diagnostic | A multi-dimensional profile after each run |
+| Dashboard | A clean view of progress and history |
+| Mobile-first UI | A layout that still feels usable on lower-cost phones |
 
-## User Journey
+## Journey
 
 ```text
 01  Onboard in under 90 seconds
@@ -43,12 +44,12 @@ It is designed to reveal how someone communicates, escalates, prioritizes, and r
 
 ## Local Setup
 
-### Prerequisites
+### Requirements
 
 - Node.js 20 or newer
 - npm
 
-### Install And Run
+### Run Locally
 
 ```bash
 npm install
@@ -57,14 +58,15 @@ npm run dev
 
 Open the local Vite URL shown in the terminal.
 
-## Available Scripts
+## Scripts
 
 | Command | Purpose |
 | --- | --- |
-| `npm run dev` | Start the local development server |
+| `npm run dev` | Start the development server |
 | `npm run build` | Create a production build |
 | `npm run lint` | Run ESLint across the project |
 | `npm run preview` | Preview the production build locally |
+
 ## Project Map
 
 ```text
@@ -77,7 +79,7 @@ src/
 
 ## Browser Storage
 
-Artha stores lightweight progress data in `localStorage` so the demo feels persistent across sessions.
+Artha keeps lightweight progress data in `localStorage` so the demo feels persistent across sessions.
 
 - `artha:runs` stores completed simulation runs.
 - `artha:modesCompleted` stores mode completion counts.
@@ -85,19 +87,19 @@ Artha stores lightweight progress data in `localStorage` so the demo feels persi
 
 ## Design Notes
 
-- The app is intentionally narrative-heavy and demo-friendly.
-- The interface is optimized for a strong first impression on mobile and desktop.
-- The copy is written to sell the product as an employability tool, not just a game.
+- Narrative-first copy keeps the product presentation-ready.
+- The interface is optimized for a strong first impression on both desktop and mobile.
+- The visual style is meant to feel like a real product rather than a classroom exercise.
 
 ## Deployment Notes
 
 - The app is ready to build as a static front end.
-- It can be deployed to Vercel or any static hosting platform that supports Vite output.
+- It can be deployed to Vercel or any static host that supports Vite output.
 - Before deployment, run `npm run build` and confirm the generated `dist/` folder is clean.
 
 ## Hackathon Context
 
-This repository is the Artha presentation build for the Wadhwani AI Hackathon. The current experience is intentionally polished, narrative-driven, and presentation-ready so it can be shown end-to-end without backend dependencies.
+This repository contains the Artha presentation build for the Wadhwani AI Hackathon. The current experience is intentionally polished, narrative-driven, and presentation-ready so it can be shown end to end without backend dependencies.
 
 ## License
 
