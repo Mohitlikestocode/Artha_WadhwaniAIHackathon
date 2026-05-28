@@ -58,10 +58,10 @@ npm run preview  # Preview the production build locally
 
 ```text
 src/
-	components/   Shared UI pieces, headers, visual systems, and jargon helpers
-	data/         Diagnostic logic, personas, scenarios, and track definitions
-	pages/        Landing, onboarding, simulation, diagnostic, and dashboard screens
-	store/        Zustand state for simulation and user progress
+  components/   Shared UI pieces, headers, visual systems, and jargon helpers
+  data/         Diagnostic logic, personas, scenarios, and track definitions
+  pages/        Landing, onboarding, simulation, diagnostic, and dashboard screens
+  store/        Zustand state for simulation and user progress
 ```
 
 ## Browser Storage
